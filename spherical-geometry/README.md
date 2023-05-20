@@ -1,1 +1,7 @@
 Two dimensional electron gas confined to Haldane Sphere. Jain-Kamilla Projection implemented according to Jain, J. K. Composite Fermions. (Cambridge University Press, 2007). doi:10.1017/CBO9780511607561, Appendix J.
+
+
+Jastrow Derivative file not included, as too large for Github. Can be found at: 
+
+All relevant functions to the spherical geometry are placed in spherical_geometry_utilities.jl.
+
