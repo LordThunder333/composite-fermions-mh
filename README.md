@@ -1,6 +1,6 @@
 # composite-fermions-mh
 Monte Carlo Simulations of Fractional Quantum Hall States using the Composite Fermion approach
-Following LogDensityProblems.jl, the code is organized as follows (to be updated):
+following LogDensityProblems.jl and AdvancedMH.jl projects, the code is organized as follows (to be updated):
 1. A system object is created for every MCMC run (chain). 
 2. Associated with a system object of a given type is a logpdf function. 
 3. Metropolis-Hastings algorithm is used as the basis for MCMC.
