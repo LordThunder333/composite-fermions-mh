@@ -2,13 +2,17 @@
 # coding: utf-8
 import scipy.special as ss
 import numpy as np
-import matplotlib.pyplot as plt
-plt.rcParams["figure.figsize"] = (16,9)
+# import matplotlib.pyplot as plt
+import scipy.optimize as so
+import scipy.integrate as si
+# plt.rcParams["figure.figsize"] = (16,9)
 
 
 def associated_laguerre(n, m):
+    """ Associated Laguerre Polynomials of type L_{n}^{m}.""""
     return lambda x: ss.poch(m+1, n)*ss.hyp1f1(-n, m+1, x)/ss.factorial(n)
 def LL_pdf(r, n, m):
+    """ Probability Distribution Function as a functions of the radius for a Landau Level n at angular momentum m."""
     return (ss.factorial(n)/ss.factorial(n+m)/2**m)*np.exp(-r**2/2)*r**(2*m+1)*(associated_laguerre(n, m)(r**2/2))**2
 
 
@@ -23,8 +27,7 @@ def LL_pdf(r, n, m):
 #     plt.savefig("./landau_levels_disk_geometry_n_%d.svg"%(n), bbox_inches="tight")
 #     plt.close()
 
-import scipy.optimize as so
-import scipy.integrate as si
+
 
 
 def radius_estimator(n, m, α): ### Estimates radius for which α amount of pdf is contained for n,m ll.
