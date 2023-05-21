@@ -142,7 +142,7 @@ function polynomial_list_generator(qstar, p, iter_list, jastrow_derivatives)
         #         println(polynomial_system)
         return StaticPolynomials.PolynomialSystem(polynomial_system), var_list
     else
-        ## Parallel flux attachment. We will generate polynomial system and list of (\alpha, \beta) that are to be passed to it for computation.
+        ## Reverse flux attachment. We will generate polynomial system and list of (\alpha, \beta) that are to be passed to it for computation.
         polynomial_system = Vector{DynamicPolynomials.Polynomial}(undef, size(iter_list, 1)) ### This seems simplest way to do this.
         #         var_list = []
         var_list = []
