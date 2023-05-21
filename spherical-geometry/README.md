@@ -3,7 +3,7 @@ Two dimensional electron gas confined to Haldane Sphere. Jain-Kamilla Projection
 
 Jastrow Derivative file not included, as too large for Github. Can be found at: https://drive.google.com/file/d/1e4iLdqPZocUjBpYWN2c49_AC-LTROx1_/view?usp=sharing. 
 
-They can also be generated using the attached files horner_polynomials.jl
+It can also be generated using the attached files horner_polynomials.jl
 
 All relevant functions to the spherical geometry are placed in spherical_geometry_utilities.jl.
 
