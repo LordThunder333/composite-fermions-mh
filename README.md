@@ -8,3 +8,5 @@ following LogDensityProblems.jl and AdvancedMH.jl projects, the code is organize
 5. Sampling is done in batches. Associated with a batch run, is a samples object. 
 6. We adapt the step size at every iteration according to ARM scheme to achieve an ideal acceptance ratio.
 7. Generic proposal distributions are allowed. As long as they are markovian.
+
+To avoid non-markovian bias, it is important that the batch size is greater than or equal to the square root of total number of samples.
